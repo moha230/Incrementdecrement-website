@@ -10,3 +10,18 @@ let a = 1;
 
 plus.addEventListener('click', () => update(++a));
 minus.addEventListener('click', () => update(--a));
+
+
+plus.onclick = function(){
+    plus.style.backgroundColor = 'blue' 
+}
+
+minus.onclick = function(){
+    if (a <= -10) {
+        minus.style.backgroundColor = "red"
+    } else
+     {
+        minus.style.backgroundColor = "white"
+    }
+    
+}
